@@ -1,0 +1,13 @@
+/*
+https://www.freecodecamp.org/news/how-to-create-a-portfolio-website-using-html-css-javascript-and-bootstrap/
+
+portfolio example
+https://codepen.io/freeCodeCamp/pen/zNBOYG*/
+
+https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/
+
+https://www.freecodecamp.org/espanol/news/ejemplos-de-portafolio-de-desarrollador-web/
+
+https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/
+
+*/

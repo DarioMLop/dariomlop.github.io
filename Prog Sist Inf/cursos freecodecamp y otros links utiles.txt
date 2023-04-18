@@ -1,0 +1,13 @@
+/*Cursos de freecodecamp que Cesar nos ha dicho que vamos a ver
+
+-(New) Responsive Web Design
+-JavaScript Algorithms and Data Structures
+-Front End Development Libraries
+-Relational Database
+
+*/
+//https://www.khanacademy.org/
+/*
+portfolio example
+https://codepen.io/freeCodeCamp/pen/zNBOYG*/
+https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/#portfolioprojecthowtobuildyourownonlinedeveloperportfolio
