@@ -2,7 +2,7 @@
 
 body {
     background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
-    background-size: 4%;
+    background-size: 100px;
 }
 
 h1 {
@@ -14,9 +14,9 @@ h1 {
 }
 
 /*-- style for the unordered list with class="navigation"*/
-ul {
-text-align: center;
 
+.navigation {
+    text-align: center;
 }
 
 li {
@@ -25,11 +25,12 @@ li {
 }
 
 /* styles for the pre in div with class="presentation" */
-pre {
+.helloheader {
+    text-justify: auto;
     text-align: center;
     color: gainsboro;
     font-size: 25px;
-    margin-bottom: -10px;
+    /*margin-bottom: -10px;*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -59,14 +60,16 @@ footer {
 /* styles for the list of links with class="nav-link" (<a>)*/
 .nav-link {
     display: inline-block;
-    margin: -25% 10px;
+    margin: -25% 20px;
     text-align: center;
 }
 
 /* styles for the list of links with class="nav-fteer"*/
 .nav-fteer {
         display: inline-block;
-        margin: 50px 10px;
-        margin-top: 25%;
+        
+        margin: 100px 20px;
+        /*margin-top: 25%;*/
+        
         text-align: center;
 }
