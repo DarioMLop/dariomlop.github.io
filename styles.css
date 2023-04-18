@@ -1,0 +1,72 @@
+/*dario_pfolio_styles.css*/
+
+body {
+    background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
+    background-size: 4%;
+}
+
+h1 {
+    text-align: center;
+    color: ghostwhite;
+    font-size: 85px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: -10px;
+}
+
+/*-- style for the unordered list with class="navigation"*/
+ul {
+text-align: center;
+
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+}
+
+/* styles for the pre in div with class="presentation" */
+pre {
+    text-align: center;
+    color: gainsboro;
+    font-size: 25px;
+    margin-bottom: -10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+color: darkgrey;
+font-size: 20px;
+text-align: center;
+}
+
+a:hover {
+    color: silver;
+}
+
+a:active {
+    color: lemonchiffon;
+}
+
+a:visited {
+    color: lightgrey;
+}
+
+footer {
+    margin-top: 25%;
+    text-align: center;
+}
+
+/* styles for the list of links with class="nav-link" (<a>)*/
+.nav-link {
+    display: inline-block;
+    margin: -25% 10px;
+    text-align: center;
+}
+
+/* styles for the list of links with class="nav-fteer"*/
+.nav-fteer {
+        display: inline-block;
+        margin: 50px 10px;
+        margin-top: 25%;
+        text-align: center;
+}
