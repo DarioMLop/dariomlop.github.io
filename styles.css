@@ -1,10 +1,16 @@
 /*dario_pfolio_styles.css*/
-
-body {
+/* back ground image*/
+.bgimageh1 {
     background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
-    background-size: 100px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /*height: 100px;*/
+    /*margin: 20px;*/
+    padding: 5px;
 }
 
+/* style for hero header*/
 h1 {
     text-align: center;
     color: ghostwhite;
@@ -13,18 +19,7 @@ h1 {
     margin-bottom: -10px;
 }
 
-/*-- style for the unordered list with class="navigation"*/
-
-.navigation {
-    text-align: center;
-}
-
-li {
-    display: inline-block;
-    text-align: center;
-}
-
-/* styles for the pre in div with class="presentation" */
+/* styles for <p> with class="helloheader" */
 .helloheader {
     text-justify: auto;
     text-align: center;
@@ -32,6 +27,50 @@ li {
     font-size: 25px;
     /*margin-bottom: -10px;*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*about me styling*/
+.bgimage-about {
+    background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 0.5px;
+    margin: 0 2px;
+}
+
+.about-title, .skills-title {
+    text-align: center;
+    color:ghostwhite;
+    font-size: 40px;
+}
+
+/* paragraph in about styles*/
+.about-pg, .skills-pg {
+    text-justify: auto;
+    text-align: center;
+    color: gainsboro;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /*white-space: pre; si digo que se comporte como un pre el texto se desborda ¿como lo arreglo?*/
+}
+
+/* styles for the div in section class="bgimage-about"*/
+.bgimage-about div {
+    /*overflow: auto;*/
+    /*height:  100%;*/
+    flex-direction: column;
+    display: flex;
+}
+
+/*-- style for the unordered list with class="navigation"*/
+.navigation {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    text-align: center;
 }
 
 a {
@@ -57,19 +96,28 @@ footer {
     text-align: center;
 }
 
-/* styles for the list of links with class="nav-link" (<a>)*/
+/* styles for the list of links with class="nav-link"*/
 .nav-link {
     display: inline-block;
     margin: -25% 20px;
     text-align: center;
 }
 
+/* applies for both links nav-menu and nav-fteer*/
+.bgimage-nav {
+    background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
+    background-size: 10%;
+    background-position: center;
+    position: relative;
+    /*height: 100px;*/
+    /*margin: 20px;*/
+    padding: 0.5px;
+}
+
 /* styles for the list of links with class="nav-fteer"*/
 .nav-fteer {
         display: inline-block;
-        
-        margin: 100px 20px;
+        margin: 0 20px;
         /*margin-top: 25%;*/
-        
         text-align: center;
 }
