@@ -18,7 +18,7 @@
       <section class="bgimage-nav">
         <div class="nav-menu">  
           <ul class="navigation">
-            <li><a href="https://dariomlop.github.io/" class="nav-link">Home</a></li>
+            <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#about" class="nav-link">About</a></li>
             <li><a href="#skills" class="nav-link">Skills</a></li>
           <!--<li><a href="#projects" class="nav-link">Projects</a></li>-->
@@ -27,7 +27,7 @@
           </ul>
         </div>
       </section>
-      <!-- div or section about-->
+      <!--section about-->
       <section class="bgimage-about" id="about">
         <div>
           <h2 class="about-title">About me</h2>
@@ -38,11 +38,8 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, fugiat. Rem placeat voluptatem ullam obcaecati similique labore officiis eum error.</p>
         </div>
       </section>
-      
-      <!--In this personal portfolio I want to show off my skills for future employers.
-      I'm currently learning HTML, CSS and JavaScript.
-      In the near future I'm interested in learning Python for Machine Learning, AI and robotics.-->
-      <section class="bgimage-about" id="about">
+      <!-- section skills-->
+      <section class="bgimage-about" id="skills">
         <div>
           <h2 class="skills-title">Skills</h2>
           <p class="skills-pg">I have been working in different fields for more than 20 years.
@@ -52,19 +49,40 @@
         </div>
         </div>
       </section>
-      <!-- div or section services-->
+      <!--section services-->
       <!--Services I offer as a full stack developer-->
 
-      <div class="nav-menu">
+      <!--section contact me-->
+      <section class="bgimage-about" id="contact">
+        <div>
+          <h2 class="skills-title">Contact me</h2>
+          <!--formulario molón, formulario del copón-->
+          <!--faltan estilos, no se ven las letras-->
+          <p class="contact-pg">Please fill out this form with the required information</p>
+        <form method="post" action="mailto:marotodario@gmail.com" enctype="text/plain">
+        <fieldset>
+          <!--¿cómo puedo añadir estilos a un placeholder dentro de input?-->
+          <label for="name"><input id="name" type="text" placeholder="Enter your name" class="input-name" required /></label><br>
+          <!--<label for="last-name">Enter Your Last Name: <input id="last-name" type="text" required /></label>-->
+          <label for="email"> <input id="email" type="email" placeholder="Enter your email" class="input-email" required /></label><br>
+          <label for="asunto"> <input id="asunto" type="text" placeholder="Email subject" class="input-subject" required /></label><br>
+          <label for="message"><textarea id="message" type="text" placeholder="Send me a message" class="input-message" rows="4" cols="50" required></textarea></label><br>
+          <input type="submit" id="submit" value="Submit the contact form" class="submit-button">
+          
+        </fieldset>
+          </div>
+          </div>
+      </section>
+
+      
       <footer class="bgimage-nav">
         <ul class="navigation">
-            <li><a href="https://dariomlop.github.io/" class="nav-fteer">Home</a></li>
+            <li><a href="#home" class="nav-fteer">Home</a></li>
             <li><a href="#about" class="nav-fteer">About</a></li>
             <li><a href="#skills" class="nav-fteer">Skills</a></li>
             <!--<li><a href="#projects" class="nav-fteer">Projects</a></li>-->
             <li><a href="#contact" class="nav-fteer">Contact me</a></li>
           </ul>
       </footer>
-    </div>
     </body>
 </html>
