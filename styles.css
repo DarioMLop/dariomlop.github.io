@@ -1,5 +1,5 @@
 /*dario_pfolio_styles.css*/
-/* back ground image*/
+/* back ground image for h1*/
 .bgimageh1 {
     background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
     background-size: cover;
@@ -32,22 +32,25 @@ h1 {
 /*about me styling*/
 .bgimage-about {
     background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    background-size: 5px 10px;
+    background-position:center;
+    background-color:midnightblue;
+    /*background-size:initial;*/
+    /*background-position: center;*/
+    position: static;
     padding-bottom: 0.5px;
-    margin: 0 2px;
 }
 
 .about-title, .skills-title {
     text-align: center;
     color:ghostwhite;
     font-size: 40px;
+    margin-bottom: -5px;
 }
 
 /* paragraph in about styles*/
-.about-pg, .skills-pg {
-    text-justify: auto;
+.about-pg, .skills-pg, .contact-pg {
+    
     text-align: center;
     color: gainsboro;
     font-size: 19px;
@@ -62,6 +65,15 @@ h1 {
     flex-direction: column;
     display: flex;
 }
+
+/*styles for the form*/
+.input-name{
+    margin: 1px;
+}
+.input-email{margin: 1px;}
+.input-subject{margin: 1px;}
+.input-message{margin: 1px;}
+.submit-button{margin:1px;}
 
 /*-- style for the unordered list with class="navigation"*/
 .navigation {
@@ -105,8 +117,7 @@ footer {
 
 /* applies for both links nav-menu and nav-fteer*/
 .bgimage-nav {
-    background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
-    background-size: 10%;
+    background-color: black;
     background-position: center;
     position: relative;
     /*height: 100px;*/
