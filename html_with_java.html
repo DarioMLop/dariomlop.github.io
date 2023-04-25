@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>HTML with JS</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h2>Click the button for something special</h2>
+        <button type="button" onclick="funSaludo()">
+            Click me
+        </button>
+        <p id="msg1"></p>
+        <script>
+            function funSaludo(){
+                document.getElementById("msg1").innerHTML = "I love you, gorgeous"
+            }
+        </script>
+    </body>
+</html>
