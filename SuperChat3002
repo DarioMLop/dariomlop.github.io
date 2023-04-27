@@ -20,10 +20,10 @@
     <button type="text" onclick="pedirPrompt()">Enviar</button>
 	<script>
       function pedirPrompt(){
-        let elementApiKey = document.getElementById("api-key");
-        let valor = elementApiKey.value;        // valor ahora es equivalente al value del elementApiKey con id="api-key"
-        let elementPrompt = document.getElementById("prompt")
-        let valor2 = elementPrompt.value;       //valor2 is now equivalent to the value of the elementPropmt with id="prompt"
+        let elementApiKey = document.getElementById("api-key").value;
+        //let valor = elementApiKey.value;        // valor ahora es equivalente al value del elementApiKey con id="api-key"
+        let elementPrompt = document.getElementById("prompt").value;
+        //let valor2 = elementPrompt.value;       //valor2 is now equivalent to the value of the elementPropmt with id="prompt"
         let elementAnswer = document.getElementById("answer")
         fetch("https://api.openai.com/v1/completions", {
                 method: "POST",
