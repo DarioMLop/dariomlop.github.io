@@ -16,32 +16,33 @@
     <p>Esta es mi primera página web creada con HTML.</p>
     <input id="api-key" type="text"></input> 
     <input id="prompt" type="text"></input>
-    <p id="answer"></p>
     <button type="text" onclick="pedirPrompt()">Enviar</button>
+    <p id="answer"></p>
+
 	<script>
+        
       function pedirPrompt(){
-        let elementApiKey = document.getElementById("api-key").value;
-        //let valor = elementApiKey.value;        // valor ahora es equivalente al value del elementApiKey con id="api-key"
-        let elementPrompt = document.getElementById("prompt").value;
-        //let valor2 = elementPrompt.value;       //valor2 is now equivalent to the value of the elementPropmt with id="prompt"
+        let elementApiKey = document.getElementById("api-key").value;     //let valor = elementApiKey.value;        // valor ahora es equivalente al value del elementApiKey con id="api-key"
+        let elementPrompt = document.getElementById("prompt").value;      //let valor2 = elementPrompt.value;       //valor2 is now equivalent to the value of the elementPropmt with id="prompt"
         let elementAnswer = document.getElementById("answer")
         fetch("https://api.openai.com/v1/completions", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
-                  "Authorization": "Bearer " + valor  //here we use the api key of openAI
+                  "Authorization": "Bearer " + elementApiKey  //here we use the api key of openAI
                 },
                 body: JSON.stringify({
                   "model": "text-davinci-003",
-                  "prompt": valor2,     //here we use the prompt of the user
+                  "prompt": elementPrompt,     //here we use the prompt of the user
                   "max_tokens": 3000,
                   "temperature": 0.5
                 })
               })
               .then(response => response.json())
-              .then(data => document.getElementById("answer").innerText = data.choices[0].text)     //here we show the answer of the AI in the <p> tag with id="answer"
-              .catch(error => document.getElementById("answer").innerText = "Ocurrió un error. Inténtalo de nuevo más tarde.")
+              .then(data => elementAnswer.innerText = data.choices[0].text)     //here we show the answer of the AI in the <p> tag with id="answer"
+              .catch(error => elementAnswer.innerText = "Ha ocurrido un error en la solicitud")
       }
+
     </script>  
 </body>
 </html>
