@@ -1,0 +1,10 @@
+let cant_articulos = Number(prompt("Introduce número de productos"));
+let precio = Number(prompt("Introduce el precio"));
+let precioTotal = 0;
+let descuento = 0
+
+if (cant_articulos >= 0){
+    if (cant_articulos >= 10 && precio >= 40){
+        precioTotal = (cant_articulos * precio) - (cant_articulos * precio * 0.15);
+    }
+}

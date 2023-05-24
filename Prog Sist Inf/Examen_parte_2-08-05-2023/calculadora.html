@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Genious 3000</title>
+</head>
+<body>
+    <!--Steps and logic to create a calculator with html and javascript-->
+    <!--I create an html document-->
+    <h1>Resultado:</h1>  <!--Optional header-->
+    <p id="result" style="font-size: 25px;font-weight: 900;"></p>  <!--I create a tag with id = result where the retult will be shown-->
+    <script>
+        // I create a tag to insert the javascript code
+        //I create two prompts to ask the user for a number
+        let num1 = Number(prompt("Introduce tu primer número"));  //I create a variable equal to save the prompt introduced by the user. Because prompt return a string we convert it to a number with the Number constructor
+        let num2 = Number(prompt("Introduce tu segundo número"));  //The second variable asking for the second number
+        //document.getElementById("result").innerText = num1 + num2;  --> very simple calculation
+        // To enhance the user usability I will use a switch statement. First using a prompt to ask for an operator:
+        let operator = prompt("Introduce '+' para suma, '-' para resta, '*' para multiplicación y '/' para division");
+        switch (operator) { //switch statement that takes the prompt operator as the expression
+            case "+":   //if the user introduce a '+' the program do a sum
+                document.getElementById("result").innerText = num1 + num2;
+                break;  //--->VERY IMPORTANT!!!
+            case "-":   //if the user introduce a '-' the program performs a substraction
+                document.getElementById("result").innerText = num1 - num2;
+                break;
+            case "*":   //if the user introduce a '*' the program performs a multiplication
+                document.getElementById("result").innerText = num1 * num2;
+                break;
+            case "/":   //if the user introduce a '/' the program performs a division
+                document.getElementById("result").innerText = num1 / num2;
+                break;
+            default:    //if the user introduces something different the message is shown
+                document.getElementById("result").innerText = "Not a valid operator";
+        }
+    </script>
+</body>
+</html>

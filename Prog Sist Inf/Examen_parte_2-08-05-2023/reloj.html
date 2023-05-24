@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Darius Stupendous</title>
+</head>
+<body>
+    <!--Steps and logic to create a watch with html and javascript-->
+    <!--I create an html document in line 1-->
+    <h1>Mi reloj wachi wachi</h1>   <!--Optional header or tag-->
+    <h3 id="reloj" style="font-weight: 5000; font-size: 30px;"></h3>    <!-- Create a tag with an id where I will show the result-->
+    
+    <script>    //Open a tag to insert the javascript 
+        setInterval(function(){     //setInterval() is a method that repeatedly calls a function or execute a code snippet
+            let date = new Date();  //I create a variable that equals a new date object with the current date and time
+            let actualHour = date.toLocaleTimeString(); //I create a variable equal to the first variable formated to be more readable
+            document.getElementById("reloj").innerText = actualHour;  //In ths line I set the tag with id = reloj to be equal to the value of actualHour and write that value in the tag
+        }, 1000)  //Here the function get called every 1000 milliseconds or every 1 second
+    </script>
+</body>
+</html>
+
+

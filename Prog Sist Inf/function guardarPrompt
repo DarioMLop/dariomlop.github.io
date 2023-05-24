@@ -1,0 +1,6 @@
+function guardarPrompt () {
+    let question = document.getElementById("question").value;   // <textarea> --> obtenemos lo que hay escrito con .value
+    let answer = document.getElementById("answer").value;
+    localStorage.setItem("question", question);
+    localStorage.setItem("answer", answer);
+}
