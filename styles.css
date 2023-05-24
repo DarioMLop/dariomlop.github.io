@@ -1,22 +1,20 @@
 /*dario_pfolio_styles.css*/
-/* back ground image for h1*/
+/* back ground image for hero header*/
 .bgimageh1 {
-    background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
+    background-color: black;
     background-size: cover;
-    background-position: center;
-    position: relative;
-    /*height: 100px;*/
-    /*margin: 20px;*/
-    padding: 5px;
+
+    width: 100%;
 }
 
 /* style for hero header*/
-h1 {
+.header {
     text-align: center;
     color: ghostwhite;
     font-size: 85px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: -10px;
+   /* margin-bottom: -10px;*/
+    
 }
 
 /* styles for <p> with class="helloheader" */
@@ -35,6 +33,8 @@ h1 {
     background-size: 5px 10px;
     background-position:center;
     background-color:midnightblue;
+    width: 100%;
+    height: 100%;
     /*background-size:initial;*/
     /*background-position: center;*/
     position: static;
@@ -48,19 +48,32 @@ h1 {
     margin-bottom: -5px;
 }
 
+/*styles for the divs*/
+.about-div, .skill-div, .contact-div{
+    text-align: center;
+    margin: 0 auto;
+    /*align-content: center;*/
+}
+
 /* paragraph in about styles*/
 .about-pg, .skills-pg, .contact-pg {
-    
+    /*max-width: 0 auto;*/
+    margin: 10px 150px;    
     text-align: center;
     color: gainsboro;
     font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /*white-space: pre; si digo que se comporte como un pre el texto se desborda ¿como lo arreglo?*/
+    
 }
 
 /* styles for the <input>, placeholders and textarea*/
-#name, #email, #subject {min-height: 2em; background-color: rgba(1, 1, 46, 0.719); color: rgb(255, 255, 255); margin: 1.1px 0; border: 2px ridge;
-width:24rem;
+#name, #email, #subject {min-height: 2em; 
+    background-color: rgba(1, 1, 46, 0.719); 
+    color: rgb(255, 255, 255); 
+    margin: 1.1px 0; 
+    border: 2px ridge;
+    width:24rem;
+    flex-wrap: wrap;
 }
 
 #subject{margin-bottom: 2px;}
@@ -71,7 +84,15 @@ text-align: center;
 font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
-textarea {background-color: rgba(1, 1, 46, 0.719); color: rgb(255, 255, 255); margin: 0 1px; border: 2px ridge; min-width: 24rem; min-height: 5em;}
+textarea {background-color: rgba(1, 1, 46, 0.719); 
+    color: rgb(255, 255, 255); 
+    margin: 0 1px; 
+    border: 2px ridge; 
+    min-width: 24rem;
+    max-width: 50rem; 
+    min-height: 5rem;
+    max-height: 24em;
+}
 
 textarea::placeholder {color: rgb(255, 255, 255); font-size: 1.15em; font-family: Tahoma, Geneva, Verdana, sans-serif;}
 
@@ -112,26 +133,31 @@ fieldset{
     text-align: center;
 }
 
-li {
+/*li*/
+.link {
     display: inline-block;
     text-align: center;
 }
 
-a {
+/*a */
+.link{
 color: darkgrey;
 font-size: 20px;
 text-align: center;
 }
 
-a:hover {
+/*a:hover */
+.link{
     color: silver;
 }
 
-a:active {
+/*a:active */
+.link{
     color: lemonchiffon;
 }
 
-a:visited {
+/*a:visited */
+.link{
     color: lightgrey;
 }
 
