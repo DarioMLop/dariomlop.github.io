@@ -146,20 +146,20 @@ font-size: 20px;
 text-align: center;
 }
 
-/*a:hover */
+/*a:hover 
 .link{
     color: silver;
 }
 
-/*a:active */
+a:active 
 .link{
     color: lemonchiffon;
 }
 
-/*a:visited */
+a:visited 
 .link{
     color: lightgrey;
-}
+}*/
 
 footer {
     margin-top: 25%;
