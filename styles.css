@@ -6,7 +6,6 @@
 
     width: 100%;
 }
-
 /* style for hero header*/
 .header {
     text-align: center;
@@ -14,9 +13,7 @@
     font-size: 85px;
     font-family: Georgia, 'Times New Roman', Times, serif;
    /* margin-bottom: -10px;*/
-    
 }
-
 /* styles for <p> with class="helloheader" */
 .helloheader {
     text-justify: auto;
@@ -26,7 +23,6 @@
     /*margin-bottom: -10px;*/
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 /*about me styling*/
 .bgimage-about {
     background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
@@ -47,14 +43,12 @@
     font-size: 40px;
     margin-bottom: -5px;
 }
-
 /*styles for the divs*/
 .about-div, .skill-div, .contact-div{
     text-align: center;
     margin: 0 auto;
     /*align-content: center;*/
 }
-
 /* paragraph in about styles*/
 .about-pg, .skills-pg, .contact-pg {
     /*max-width: 0 auto;*/
@@ -63,9 +57,7 @@
     color: gainsboro;
     font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
 }
-
 /* styles for the <input>, placeholders and textarea*/
 #name, #email, #subject {min-height: 2em; 
     background-color: rgba(1, 1, 46, 0.719); 
@@ -76,7 +68,7 @@
     flex-wrap: wrap;
 }
 
-#subject{margin-bottom: 2px;}
+#subject {margin-bottom: 2px;}
 
 ::placeholder {color: rgb(255, 255, 255);
 font-size: 1.1em;
