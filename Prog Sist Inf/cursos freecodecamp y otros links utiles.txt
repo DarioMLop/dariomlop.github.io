@@ -16,5 +16,6 @@ https://www.learn-js.org/en/Manipulating_Arrays
 lógica matematica
 lógica resolución problemas
 ///////////////////////////////////////////
+https://leetcode.com/discuss/study-guide/3458761/Open-to-Registration!-30-Days-of-LC-JavaScript-Challenge/?utm_campaign=Banner26&utm_medium=Banner&utm_source=Banner&gio_link_id=LPdzgNj9
 ////////////////////////////////////////////////
 https://flexboxfroggy.com/#es
