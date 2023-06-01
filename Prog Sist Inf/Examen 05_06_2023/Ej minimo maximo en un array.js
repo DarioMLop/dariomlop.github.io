@@ -3,6 +3,8 @@ let input = -1;
 let num = Number;   
 let array = [];
 
+/*===>> comprobar entrada con typeof instanceof === "number"*/
+
 while (input != 0){  // Bucle para repetir el codigo mientras input sea diferente de 0
     input = prompt(`Introduce tu serie de números.
 Pulsa cero para salir`);  // Le pido números al usuario con un prompt
