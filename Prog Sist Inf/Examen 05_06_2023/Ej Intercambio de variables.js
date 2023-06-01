@@ -13,4 +13,4 @@ num3 = temp;    // num3 = 66
 num2 = temp2;   // num2 = 44
 
 console.log(`Magia. Valores intercambiados (pares con pares): 
-1º: ${num}, 2º ${num2}, 3º ${num3}, 4º ${num4}`);
+1º: ${num}, 2º: ${num2}, 3º: ${num3}, 4º: ${num4}`);
