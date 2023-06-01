@@ -1,5 +1,6 @@
 /*Intercambio de valor entre dos variables*/
-
+/* Con tiempo y aburrimento lo he hecho de cuatro. Seguro hay alguna forma más fácil.
+Ahora que lo pienso con arrays e indices sería más rápido */
 let num = 66, num2 = 22, num3 = 99, num4 = 44, temp = 0, temp2 = 0;
 
 console.log(`Números en orden original: 
