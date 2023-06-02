@@ -8,44 +8,46 @@
       <link href="styles.css" rel="stylesheet">
       <!-- bootstrap library -->
       <link rel="stylesheet" href="C:\Users\junky\Desktop\Programacion\HTML, CSS, estilos\bootstrap-5.3.0-alpha3-dist\css\bootstrap.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
       <!-- fontawesome library -->
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  </head>
+      <!--tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    </head>
     </head>
     <body>
       <!-- Header -->
       <nav class="navbar bgimageh1" id="home">
         <div class="presentation d-flex align-items-center justify-content-center">
-          <img src="images/Pink_Logo.png" alt="Logo" width="200" height="200" class="d-inline-block align-text-top">
-          <div class="text-center me-5">
-            <h1 class="header">Darío Maroto</h1>
-            <p class="helloheader">Hello, I'm Darío and I'm a Full Stack Developer."
-            </p>
+          <img src="C:\Users\junky\Desktop\Programacion\HTML, CSS, estilos\Portfolio\images\Pink_Logo.png" alt="Logo" width="200" height="200" class="d-inline-block align-text-top">
+          <div class="text-center">
+            <h1 class="header">Dario Maroto</h1>
+            <p class="helloheader">Hello, I'm Dario Maroto and I'm a future Full Stack Developer.</p>
           </div>
         </div>
       </nav>
-      <nav class="navbar sticky-top bg-secondary">
-        <div class="row">
-          <div class="col">
-            <img src="images/Pink_Logo2.png" alt="Logo" width="70" height="70" class="justify-content-start ms-4">
+  
+      <nav class="navbar sticky-top bg-body-secondary-emphasis">
+        <div class="container-fluid">
+          <div>
+            <img src="C:\Users\junky\Desktop\Programacion\HTML, CSS, estilos\Portfolio\images\Pink_Logo2.png" alt="Logo" width="70" height="70" class="justify-content-start">
           </div>
-          <div class="justify-content-center col-6 my-auto" id="">
-              <ul class="text-nowrap mx-auto my-auto">
+            <!-- <div class="text-nowrap navbar-expand-lg justify-content-center" id="navbarNav"> -->
+              <ul class="text-nowrap justify-content-center mx-auto d-inline">
                 <li class="d-inline mx-3">
-                  <a class="scrollto active" aria-current="page" href="#home">Home</a>
+                  <a class="" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="d-inline mx-3">
-                  <a class="text-black scrollto" href="#about">About me</a>
+                  <a class="text-black" href="#">Features</a>
                 </li>
                 <li class="d-inline mx-3">
-                  <a class="text-black scrollto" href="#skills">Skills</a>
+                  <a class="text-black" href="#">Pricing</a>
                 </li>
                 <li class="d-inline mx-3">
-                  <a class="text-black scrollto" href="#contact">Contact me</a>
+                  <a class="text-black">whaever</a>
                 </li>
               </ul>
-          </div>
+            <!-- </div> -->
         </div>
       </nav>
       
@@ -97,8 +99,12 @@
       
       <footer class="bgimage-nav">
         <ul class="navigation">
+            <li><a href="#home" class="nav-fteer">Home</a></li>
+            <li><a href="#about" class="nav-fteer">About</a></li>
+            <li><a href="#skills" class="nav-fteer">Skills</a></li>
+            <!--<li><a href="#projects" class="nav-fteer">Projects</a></li>-->
             <li><a href="#contact" class="nav-fteer">Contact me</a></li>
-        </ul>
+          </ul>
       </footer>
     </body>
 </html>
