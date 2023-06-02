@@ -1,5 +1,4 @@
 /*dario_pfolio_styles.css*/
-<<<<<<< HEAD
 /* back ground image*/
 .bgimageh1 {
     background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
@@ -13,18 +12,6 @@
 
 /* style for hero header*/
 h1 {
-=======
-/* back ground image for hero header*/
-.bgimageh1 {
-    background-color: black;
-    background-size: cover;
-
-    width: 100%;
-}
-
-/* style for hero header*/
-.header {
->>>>>>> efa6ac0262f771338525c177dc1b22978c486368
     text-align: center;
     color: ghostwhite;
     font-size: 85px;
@@ -46,7 +33,6 @@ h1 {
 /*about me styling*/
 .bgimage-about {
     background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
-<<<<<<< HEAD
     background-size: cover;
     background-position: center;
     position: relative;
@@ -63,45 +49,10 @@ h1 {
 /* paragraph in about styles*/
 .about-pg, .skills-pg {
     text-justify: auto;
-=======
-    background-size: 5px 10px;
-    background-position:center;
-    background-color:midnightblue;
-    width: 100%;
-    height: 100%;
-    /*background-size:initial;*/
-    /*background-position: center;*/
-    position: static;
-    padding-bottom: 0.5px;
-}
-
-.about-title, .skills-title, .contact-title {
-    text-align: center;
-    color:ghostwhite;
-    font-size: 40px;
-    margin-bottom: -5px;
-}
-
-/*styles for the divs*/
-.about-div, .skill-div, .contact-div{
-    text-align: center;
-    margin: 0 auto;
-    /*align-content: center;*/
-}
-
-/* paragraph in about styles*/
-.about-pg, .skills-pg, .contact-pg {
-    /*max-width: 0 auto;*/
-    margin: 10px 150px;    
->>>>>>> efa6ac0262f771338525c177dc1b22978c486368
     text-align: center;
     color: gainsboro;
     font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-<<<<<<< HEAD
-    /*white-space: pre; si digo que se comporte como un pre el texto se desborda ¿como lo arreglo?*/
-=======
-    
 }
 
 /* styles for the <input>, placeholders and textarea*/
@@ -147,7 +98,6 @@ textarea::placeholder {color: rgb(255, 255, 255); font-size: 1.15em; font-family
 
 fieldset{
     border: 0;
->>>>>>> efa6ac0262f771338525c177dc1b22978c486368
 }
 
 /* styles for the div in section class="bgimage-about"*/
@@ -158,8 +108,6 @@ fieldset{
     display: flex;
 }
 
-<<<<<<< HEAD
-=======
 /*styles for the form*/
 .input-name{
     margin: 1px;
@@ -169,7 +117,6 @@ fieldset{
 .input-message{margin: 1px;}
 .submit-button{margin:1px;}
 
->>>>>>> efa6ac0262f771338525c177dc1b22978c486368
 /*-- style for the unordered list with class="navigation"*/
 .navigation {
     text-align: center;
@@ -181,12 +128,9 @@ fieldset{
     text-align: center;
 }
 
-<<<<<<< HEAD
 a {
-=======
 a
 .link{
->>>>>>> efa6ac0262f771338525c177dc1b22978c486368
 color: darkgrey;
 font-size: 20px;
 text-align: center;
@@ -221,12 +165,9 @@ footer {
 
 /* applies for both links nav-menu and nav-fteer*/
 .bgimage-nav {
-<<<<<<< HEAD
     background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
     background-size: 10%;
-=======
     background-color: black;
->>>>>>> efa6ac0262f771338525c177dc1b22978c486368
     background-position: center;
     position: relative;
     /*height: 100px;*/
