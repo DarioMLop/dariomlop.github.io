@@ -1,4 +1,5 @@
 /*dario_pfolio_styles.css*/
+<<<<<<< HEAD
 /* back ground image*/
 .bgimageh1 {
     background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
@@ -12,11 +13,24 @@
 
 /* style for hero header*/
 h1 {
+=======
+/* back ground image for hero header*/
+.bgimageh1 {
+    background-color: black;
+    background-size: cover;
+
+    width: 100%;
+}
+
+/* style for hero header*/
+.header {
+>>>>>>> efa6ac0262f771338525c177dc1b22978c486368
     text-align: center;
     color: ghostwhite;
     font-size: 85px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-bottom: -10px;
+   /* margin-bottom: -10px;*/
+    
 }
 
 /* styles for <p> with class="helloheader" */
@@ -32,6 +46,7 @@ h1 {
 /*about me styling*/
 .bgimage-about {
     background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
+<<<<<<< HEAD
     background-size: cover;
     background-position: center;
     position: relative;
@@ -48,11 +63,91 @@ h1 {
 /* paragraph in about styles*/
 .about-pg, .skills-pg {
     text-justify: auto;
+=======
+    background-size: 5px 10px;
+    background-position:center;
+    background-color:midnightblue;
+    width: 100%;
+    height: 100%;
+    /*background-size:initial;*/
+    /*background-position: center;*/
+    position: static;
+    padding-bottom: 0.5px;
+}
+
+.about-title, .skills-title, .contact-title {
+    text-align: center;
+    color:ghostwhite;
+    font-size: 40px;
+    margin-bottom: -5px;
+}
+
+/*styles for the divs*/
+.about-div, .skill-div, .contact-div{
+    text-align: center;
+    margin: 0 auto;
+    /*align-content: center;*/
+}
+
+/* paragraph in about styles*/
+.about-pg, .skills-pg, .contact-pg {
+    /*max-width: 0 auto;*/
+    margin: 10px 150px;    
+>>>>>>> efa6ac0262f771338525c177dc1b22978c486368
     text-align: center;
     color: gainsboro;
     font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+<<<<<<< HEAD
     /*white-space: pre; si digo que se comporte como un pre el texto se desborda ¿como lo arreglo?*/
+=======
+    
+}
+
+/* styles for the <input>, placeholders and textarea*/
+#name, #email, #subject {min-height: 2em; 
+    background-color: rgba(1, 1, 46, 0.719); 
+    color: rgb(255, 255, 255); 
+    margin: 1.1px 0; 
+    border: 2px ridge;
+    width:24rem;
+    flex-wrap: wrap;
+}
+
+#subject{margin-bottom: 2px;}
+
+::placeholder {color: rgb(255, 255, 255);
+font-size: 1.1em;
+text-align: center;
+font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea {background-color: rgba(1, 1, 46, 0.719); 
+    color: rgb(255, 255, 255); 
+    margin: 0 1px; 
+    border: 2px ridge; 
+    min-width: 24rem;
+    max-width: 50rem; 
+    min-height: 5rem;
+    max-height: 24em;
+}
+
+textarea::placeholder {color: rgb(255, 255, 255); font-size: 1.15em; font-family: Tahoma, Geneva, Verdana, sans-serif;}
+
+.submit-button {
+    color: rgb(255, 255, 255);
+    background-color: rgba(1, 1, 46, 0.719); border: 2px ridge;
+    min-height: 2rem;
+    /*width:24rem;*/
+}
+
+#contact{
+    text-align: center;
+}
+
+fieldset{
+    border: 0;
+>>>>>>> efa6ac0262f771338525c177dc1b22978c486368
 }
 
 /* styles for the div in section class="bgimage-about"*/
@@ -63,33 +158,54 @@ h1 {
     display: flex;
 }
 
+<<<<<<< HEAD
+=======
+/*styles for the form*/
+.input-name{
+    margin: 1px;
+}
+.input-email{margin: 1px;}
+.input-subject{margin: 1px;}
+.input-message{margin: 1px;}
+.submit-button{margin:1px;}
+
+>>>>>>> efa6ac0262f771338525c177dc1b22978c486368
 /*-- style for the unordered list with class="navigation"*/
 .navigation {
     text-align: center;
 }
 
-li {
+/*li
+.link {
     display: inline-block;
     text-align: center;
 }
 
+<<<<<<< HEAD
 a {
+=======
+a
+.link{
+>>>>>>> efa6ac0262f771338525c177dc1b22978c486368
 color: darkgrey;
 font-size: 20px;
 text-align: center;
-}
+}*/
 
-a:hover {
+/*a:hover 
+.link{
     color: silver;
 }
 
-a:active {
+a:active 
+.link{
     color: lemonchiffon;
 }
 
-a:visited {
+a:visited 
+.link{
     color: lightgrey;
-}
+}*/
 
 footer {
     margin-top: 25%;
@@ -105,8 +221,12 @@ footer {
 
 /* applies for both links nav-menu and nav-fteer*/
 .bgimage-nav {
+<<<<<<< HEAD
     background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
     background-size: 10%;
+=======
+    background-color: black;
+>>>>>>> efa6ac0262f771338525c177dc1b22978c486368
     background-position: center;
     position: relative;
     /*height: 100px;*/
@@ -120,4 +240,8 @@ footer {
         margin: 0 20px;
         /*margin-top: 25%;*/
         text-align: center;
+}
+/*profile paragraph*/
+.pro-prg {
+    font-family: Georgia, Verdana, Geneva, Tahoma;
 }
