@@ -1,0 +1,1 @@
+let edad = parseInt(prompt("Introduce tu edad"));

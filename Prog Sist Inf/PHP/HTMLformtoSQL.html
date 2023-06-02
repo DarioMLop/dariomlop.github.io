@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="submit.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+      
+        <input type="submit" value="Submit">
+      </form>
+<?php
+    // Connect to MySQL database
+    $host = 'localhost';
+    $user = 'username';
+    $password = 'password';
+    $dbname = 'database_name';
+    $conn = mysqli_connect($host, $user, $password, $dbname);
+
+    // Check connection
+    if (!$conn) {
+    die('Connection failed: ' . mysqli_connect_error());
+    }
+
+    // Extract form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+
+    // Insert data into MySQL table
+    $sql = "INSERT INTO users (name, email) VALUES ('$name', '$email')";
+    if (mysqli_query($conn, $sql)) {
+        echo 'Data inserted successfully';
+    } else {
+        echo 'Error inserting data: ' . mysqli_error($conn);
+    }
+
+    // Close MySQL connection
+    mysqli_close($conn);
+?>
+</body>
+</html>

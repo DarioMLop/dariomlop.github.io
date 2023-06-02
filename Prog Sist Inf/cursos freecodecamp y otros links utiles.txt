@@ -7,7 +7,14 @@
 
 */
 //https://www.khanacademy.org/
-/*
-portfolio example
-https://codepen.io/freeCodeCamp/pen/zNBOYG*/
-https://www.freecodecamp.org/news/how-to-build-a-developer-portfolio-website/#portfolioprojecthowtobuildyourownonlinedeveloperportfolio
+
+https://javascript.espaciolatino.com/evaluar/index.htm
+https://learnjavascript.online/
+https://www.digitalocean.com/community/tutorial_series/how-to-code-in-javascript
+https://www.educative.io/courses/introduction-to-javascript-first-steps
+https://www.learn-js.org/en/Manipulating_Arrays
+lógica matematica
+lógica resolución problemas
+///////////////////////////////////////////
+////////////////////////////////////////////////
+https://flexboxfroggy.com/#es

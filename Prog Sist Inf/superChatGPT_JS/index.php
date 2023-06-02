@@ -1,0 +1,98 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+
+<head>
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperChatGPT</title> 
+  <link rel="icon" href="./logo.png">
+  <link href="styles.css" rel="stylesheet">
+</head>
+ 
+<body> 
+ <header>
+    <div class="encabezado">
+      <h1 class="titulo">SuperChatGPT</h1>
+    <div class="logo">
+      <img class="img_logo" src="https://raw.githubusercontent.com/cesarlpb/SuperChatGPT/main/logo.png" alt="logo">
+    </div>
+    </div>
+ </header>
+
+ <div class="container">
+  <div class="background">
+    <div id="my-div"></div>
+  <section class="sec-key">
+    
+      <label for="api_key-input">Ingresa tu clave de API: </label>
+      <br>
+      <input type="text" id="api-key-input" name="api-key-input" placeholder="🗝️Aquí va tu clave API🗝️" required>
+    
+  </section>
+
+  <section class="sec-pre">
+      <label for="question">Pregunta:</label><br>
+      <textarea id="question" name="question" rows="4" cols="50" placeholder="🥑🥑🥑¿Te gustan los aguacates?🥑🥑🥑"></textarea>
+      <br><br>
+      <button onclick="pedirPrompt()">Enviar</button>
+  </section>    
+
+  <section class="sec-res">   
+    
+    <label for="answer">Respuesta:</label><br>
+    <textarea id="answer" name="answer" rows="10" cols="77" placeholder="🥑🥑🥑Me gustan los aguacates y las papayas...;D🥑🥑🥑"></textarea>
+    <button onclick="guardar()">Guardar</button>
+    
+  </section> 
+  </div>
+ </div>  
+
+    <footer>
+    <p>Derechos de SuperChatGPT © 2023</p>
+    <small class="text-muted">No se lastimaron aguacates en esta página. Presuntamente.</small>
+  </footer>
+  <script>
+    function pedirPrompt(){
+      let elementApiKey = document.getElementById("api-key-input").value;   //saves the 'value' introduced in the tag with id = api-key-input
+      let elementPrompt = document.getElementById("question").value;  // saves or read the question introduced in the tag with id = question
+      let elementAnswer = document.getElementById("answer").innerText;
+     
+      fetch("https://api.openai.com/v1/completions", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer " + elementApiKey  //"Bearer " + elementApiKey
+              },
+              body: JSON.stringify({
+                "model": "text-davinci-003",
+                "prompt": elementPrompt,
+                "max_tokens": 3000,
+                "temperature": 0
+              })
+            })
+            .then(response => response.json())
+            .then(data => elementAnswer = data.choices[0].text)
+            .catch(error => console.error(error))
+      }
+      // EDITAMOS AQUÍ
+      function guardar(){
+        // Leemos el #question y #answer
+        let question = document.getElementById('question').value // <textarea> -> tomamos el texto con value 
+        let answer = document.getElementById('answer').value
+        let n = 1
+        if(localStorage.length > 0){
+          n = localStorage.length
+        }
+        // Guardamos los datos en localStorage
+        let key = 'question-' + (n-1) // paréntesis para resolver primero la resta y después concatenar
+        let value = 'answer-' + (n-1)
+        console.log(key, value)
+        localStorage.setItem(key, question)
+        localStorage.setItem(value, answer)
+        alert("Guardado!🌮")
+      }
+      // EDITAMOS AQUÍ
+   </script>  
+</body>
+</html>

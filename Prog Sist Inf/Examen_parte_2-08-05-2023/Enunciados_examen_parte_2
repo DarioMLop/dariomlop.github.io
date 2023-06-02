@@ -1,0 +1,5 @@
+¿Cómo podemos hacer un reloj que se actualice solo en la página web? No hace falta el código aunque se admite, pero sí un razonamiento.
+
+Imaginemos que quiero hacer una calculadora. Necesito recibir datos del usuario usando prompt() pero existe el problema de que los inputs están en un formato incorrecto para realizar operaciones algebraicas. ¿Cómo puedo evitar este problema? No hace falta el código aunque se admite, pero sí un razonamiento.
+
+¿Cómo puedo colocar un vídeo en reproducción automática en el fondo de mi página web? No hace falta el código aunque se admite, pero sí un razonamiento.

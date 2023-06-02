@@ -1,0 +1,29 @@
+<!--basically to put a video as a "background" you use z-index in css-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video en el fondo</title>
+    <style>     /*We can create a styling cascade sheet in the html or in a different archive*/
+        video{  /*Aiming to the video tag.*/
+            z-index: -2; /*This put the video tag 'behind' all the other tags. If the number is positive it goes to the front. 'z' is the third coordinate in three dimensions*/
+            position: fixed;
+            right: 0; 
+            bottom: 0;
+            width: 100vw;
+            /* Dejando la altura en auto encaja mejor el vídeo */
+            /* height: 100%; */ 
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <video poster="" autoplay muted loop playsinline>  <!--video tag with a poster property which is an image taken from your video (like a preview). autoplay reproduce the video when you land in the page. muted plays the video in mute. loop plays the video again and again. playsinline in for mobile visualization-->
+        <source src="" type="">  <!--source tag with src property to write the path to your video and type property to declare what kind of video is playing (mp4, ogg...)-->
+    </video>
+</body>
+</html>
