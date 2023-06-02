@@ -1,17 +1,15 @@
 /*dario_pfolio_styles.css*/
-/* back ground image*/
+/* back ground image for hero header*/
+
 .bgimageh1 {
-    background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
+    background-color: black;
     background-size: cover;
-    background-position: center;
-    position: relative;
-    /*height: 100px;*/
-    /*margin: 20px;*/
-    padding: 5px;
+    height: 100vh;
+    width: 100%;
 }
 
 /* style for hero header*/
-h1 {
+.header {
     text-align: center;
     color: ghostwhite;
     font-size: 85px;
@@ -33,26 +31,40 @@ h1 {
 /*about me styling*/
 .bgimage-about {
     background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    background-size: 5px 10px;
+    background-position:center;
+    background-color:midnightblue;
+    width: 100%;
+    height: 100vh;
+    /*background-size:initial;*/
+    /*background-position: center;*/
+    position: static;
     padding-bottom: 0.5px;
-    margin: 0 2px;
 }
 
-.about-title, .skills-title {
+.about-title, .skills-title, .contact-title {
     text-align: center;
     color:ghostwhite;
     font-size: 40px;
+    margin-bottom: -5px;
+}
+
+/*styles for the divs*/
+.about-div, .skill-div, .contact-div{
+    text-align: center;
+    margin: 0 auto;
+    /*align-content: center;*/
 }
 
 /* paragraph in about styles*/
-.about-pg, .skills-pg {
-    text-justify: auto;
+.about-pg, .skills-pg, .contact-pg {
+    /*max-width: 0 auto;*/
+    margin: 10px 150px;    
     text-align: center;
     color: gainsboro;
     font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 /* styles for the <input>, placeholders and textarea*/
@@ -128,7 +140,6 @@ fieldset{
     text-align: center;
 }
 
-a {
 a
 .link{
 color: darkgrey;
@@ -165,8 +176,6 @@ footer {
 
 /* applies for both links nav-menu and nav-fteer*/
 .bgimage-nav {
-    background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
-    background-size: 10%;
     background-color: black;
     background-position: center;
     position: relative;
