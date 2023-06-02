@@ -31,7 +31,6 @@ h1 {
 
 /*about me styling*/
 .bgimage-about {
-    background-image: url(https://images.pond5.com/sound-waves-frequency-futuristic-look-footage-159354179_iconl.jpeg);
     background-size: 5px 10px;
     background-position:center;
     background-color:midnightblue;
@@ -55,7 +54,6 @@ h1 {
     color: gainsboro;
     font-size: 19px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /*white-space: pre; si digo que se comporte como un pre el texto se desborda ¿como lo arreglo?*/
 }
 
 /* styles for the <input>, placeholders and textarea*/
