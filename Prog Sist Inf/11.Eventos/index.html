@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script> 
+  // Este evento espera a que toda la página cargue
+    window.addEventListener("load", (event) => {
+      console.log("La página ha cargado");
+      // Aunque está varias líneas antes del input de precio, si conseguimos seleccionar el input
+      let el = document.getElementById("precio")
+      console.log(el)
+      
+      // Ejercicio 4
+      ej4()
+  });
+  </script>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos</title>
+  <style>
+    body{
+      background-color: aliceblue;
+      text-align: center;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .borde{
+      border: 1px solid black;
+      padding: 5px;
+      width: 30%;
+      background-color: lightgray;
+      margin: 10px auto;
+    }
+    .rojo{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+    <h1>Ejercicios de Eventos</h1>
+    <!-- Ejercicio 1 -->
+    <h2>Ejercicio 1</h2>
+    <div onclick="ej1()" class="borde">Pulsa aquí para ver un alert</div>
+    <!-- Ejercicio 2 -->
+    <h2>Ejercicio 2</h2>
+    <div onmouseenter="ej2('dentro')" onmouseleave="ej2('fuera')" class="borde">Colocar cursor aquí</div>
+    <div class="borde rojo">Efectos del movimiento</div>
+    <!-- Ejercicio 3 -->
+    <h2>Ejercicio 3</h2>
+    <form>
+      <label>Primer número:</label><br>
+      <input id="precio" type="number"><br>
+      <label>Segundo número:</label><br>
+      <input id="cantidad" type="number"><br>
+      <input type="button" id="enviar" value="Calcular"><br>
+      <label>Resultado:</label><br>
+      <input id="total" readonly disabled>
+    </form>
+
+   <!-- Ejercicio 4 -->
+   <h2>Ejercicio 4</h2>             
+    <div style="display: block; width: 100px; height: 100px;" class="borde" id="cuadro">
+      Cuadro que cambia al entrar el ratón            
+    </div>
+
+    <!-- Ejercicio 5 -->
+    <h2>Ejercicio 5</h2> 
+      <style>
+      .boton{display:block; width:100px;cursor:pointer;margin: 10px;border:1px solid black}
+      </style> 
+
+      <div id="boton1" class="boton" style="margin:10px auto;">Pulsar aquí</div>
+      <div id="boton2" class="boton" style="margin:10px auto;">Pulsar aquí</div>
+
+    <!-- Ejercicio 6 -->
+    <h2>Ejercicio 6</h2>
+    <label>Coordenada X</label><br>          
+    <input id="cX" placeholder="0" readonly><span> px</span>
+    <br>
+    <label>Coordenada Y</label><br>           
+    <input id="cY" placeholder="0" readonly><span> px</span>
+
+    <!-- Ejercicio 7 -->
+    <h2>Ejercicio 7</h2>
+    
+    <style>
+    #red {
+      flex-grow: 1;
+      background: red;
+    }
+    #white{
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+      flex-grow: 1;
+      background: white;
+    }
+
+    #blue {
+      flex-grow: 1;
+      background: blue;
+    }
+    </style>
+  <div style="display: flex; width: 250px; height: 125px; border:1px solid black; margin: 0 auto;">
+    <div id="red"></div>
+    <div id="white"></div>
+    <div id="blue"></div>
+  </div>
+  <script src="./1.js"></script>
+  <script src="./2.js"></script>
+  <script src="./3.js"></script>
+  <script src="./4.js"></script>
+  <script src="./5.js"></script>
+  <!--<script src="./6.js"></script>-->
+  <script src="./7.js"></script>
+  <script>
+  // Este evento sucede antes del de "load" y también nos permite acceder a elementos del DOM
+  window.addEventListener("DOMContentLoaded", (event) => {
+    console.log("El DOM está disponible");
+    let el = document.getElementById("precio")
+    console.log(el)
+  });
+  </script>
+</body>
+</html>
